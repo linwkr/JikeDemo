@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7EJ-Wl-Had">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Icf-15-oga">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Icf-15-oga" secondAttribute="bottom" id="4rs-FK-lk6"/>
+                            <constraint firstItem="Icf-15-oga" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5aX-Ks-Lbb"/>
+                            <constraint firstItem="Icf-15-oga" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Fl0-CS-VQp"/>
+                            <constraint firstItem="Icf-15-oga" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZzM-Ur-j9I"/>
+                            <constraint firstItem="Icf-15-oga" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="adw-fO-S1W"/>
+                            <constraint firstItem="Icf-15-oga" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="edN-Rc-vb2"/>
+                            <constraint firstAttribute="trailing" secondItem="Icf-15-oga" secondAttribute="trailing" id="xIl-bK-T1I"/>
+                            <constraint firstAttribute="bottom" secondItem="Icf-15-oga" secondAttribute="bottom" id="yqX-WE-Q5A"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5aX-Ks-Lbb"/>
+                                <exclude reference="Fl0-CS-VQp"/>
+                                <exclude reference="adw-fO-S1W"/>
+                                <exclude reference="4rs-FK-lk6"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="xhq-N3-5dd"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="JikeDemoTableView" destination="Icf-15-oga" id="Bhs-aA-ED8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071" y="-428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="u8O-Ml-YYu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7EJ-Wl-Had" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ECY-8o-9sD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="TLZ-kR-BqO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M0J-TO-ewl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="-428"/>
+        </scene>
+    </scenes>
+</document>

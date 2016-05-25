@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JikeDemoSepartorTableViewCellIdentifier" id="KGk-i7-Jjw" customClass="JikeDemoSepartorTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="10"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="9.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Btb-Le-CwJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="10"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="1Km-LR-KOe"/>
+                            <constraint firstAttribute="height" constant="10" id="E0j-CD-4Aq"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="1Km-LR-KOe"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Btb-Le-CwJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Fav-Zh-p3n"/>
+                    <constraint firstItem="Btb-Le-CwJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="nlw-5k-thI"/>
+                    <constraint firstAttribute="trailing" secondItem="Btb-Le-CwJ" secondAttribute="trailing" id="odG-kT-BrJ"/>
+                    <constraint firstAttribute="bottom" secondItem="Btb-Le-CwJ" secondAttribute="bottom" id="tGC-We-sB1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="265" y="307"/>
+        </tableViewCell>
+    </objects>
+</document>
